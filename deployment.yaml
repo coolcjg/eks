@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mario
+  namespace: argocd
+  labels:
+    app: mario
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mario
+  template:
+    metadata:
+      labels:
+        app: mario
+    spec:
+      containers:
+        - name: mario
+          image: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/board:2024-07-06T14-51-50
