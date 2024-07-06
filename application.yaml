@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: services/offer-be
+    path: .
     repoURL: git@github.com:coolcjg/eks.git
     targetRevision: HEAD
   syncPolicy:

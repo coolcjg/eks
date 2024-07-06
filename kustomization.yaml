@@ -3,4 +3,4 @@ resources:
   - service.yaml
 images:
   - name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/board
-    newTag: 2024-07-06T14-51-55
+    newTag: 2024-07-06T19-52-44
