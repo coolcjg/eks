@@ -1,5 +1,0 @@
-resources:
-  - mario.yaml
-images:
-  - name: pengbai/docker-supermario
-    newName: pengbai/docker-supermario
