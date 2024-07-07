@@ -1,8 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mario
+spec:
+  selector:
+    app: mario
+  ports:
+    - port: 80
+      protocol: TCP
+      targetPort: 8080
+  type: LoadBalancer
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mario
-  namespace: argocd
   labels:
     app: mario
 spec:
@@ -17,4 +29,4 @@ spec:
     spec:
       containers:
         - name: mario
-          image: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/board:2024-07-06T14-51-50
+          image: pengbai/docker-supermario

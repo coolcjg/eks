@@ -1,6 +1,5 @@
 resources:
-  - deployment.yaml
-  - service.yaml
+  - mario.yaml
 images:
-  - name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/board
-    newTag: 2024-07-06T19-52-44
+  - name: pengbai/docker-supermario
+    newName: pengbai/docker-supermario
