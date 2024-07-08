@@ -1,23 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: eks-deploy
+  name: mario
+  labels:
+    app: mario
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: eks-test
+      app: mario
   template:
     metadata:
       labels:
-        app: eks-test
+        app: mario
     spec:
       containers:
-        - name: eks-test
+        - name: mario
           image: pengbai/docker-supermario
-          ports:
-            - containerPort: 80
-          imagePullPolicy: Always
-          env:
-            - name: DATE
-              value: 'DATE_STRING'
