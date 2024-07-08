@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
         - name: mario
-          image: pengbai/docker-supermario
+          image: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/board:2024-07-08T17-43-54
