@@ -4,6 +4,5 @@ resources:
 images:
 - name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/board
   newTag: 2024-07-08T18-05-33
-- name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/board:2024-07-08T17-43-54
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
