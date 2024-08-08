@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chat
+  labels:
+    app: chat
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chat
+  template:
+    metadata:
+      labels:
+        app: chat
+    spec:
+      containers:
+        - name: chat
+          image: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/chat:2024-07-08T17-43-54
+          volumeMounts:
+            - name: persistent-storage
+              mountPath: /upload
+      volumes:
+        - name: persistent-storage
+          persistentVolumeClaim:
+            claimName: efs-claim

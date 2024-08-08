@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: batch
+  labels:
+    app: batch
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: batch
+  template:
+    metadata:
+      labels:
+        app: batch
+    spec:
+      containers:
+        - name: batch
+          image: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/batch:2024-07-08T17-43-54
+          volumeMounts:
+            - name: persistent-storage
+              mountPath: /upload
+      volumes:
+        - name: persistent-storage
+          persistentVolumeClaim:
+            claimName: efs-claim
