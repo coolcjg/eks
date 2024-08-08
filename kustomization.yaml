@@ -3,6 +3,6 @@ resources:
 - Service.yaml
 images:
 - name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/board
-  newTag: 2024-07-08T20-13-01
+  newTag: 2024-08-08T14-12-04
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
