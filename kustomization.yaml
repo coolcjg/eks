@@ -7,6 +7,6 @@ images:
 - name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/board
   newTag: 2024-08-08T14-56-57
 - name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/react
-  newTag: "57"
+  newTag: "58"
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
