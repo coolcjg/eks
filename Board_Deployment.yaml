@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mario
+  name: board
   labels:
-    app: mario
+    app: board
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mario
+      app: board
   template:
     metadata:
       labels:
-        app: mario
+        app: board
     spec:
       containers:
-        - name: mario
+        - name: board
           image: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/board:2024-07-08T17-43-54
