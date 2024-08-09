@@ -19,7 +19,7 @@ images:
 - name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/batch
   newTag: 2024-08-08T19-03-31
 - name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/board
-  newTag: 2024-08-09T21-11-29
+  newTag: 2024-08-09T21-26-26
 - name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/chat
   newTag: 2024-08-09T21-12-04
 - name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/encoder
