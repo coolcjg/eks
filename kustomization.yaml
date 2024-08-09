@@ -3,29 +3,29 @@ resources:
 - React_Service.yaml
 - Board_Deployment.yaml
 - Board_Service.yaml
-- Encoder_Deployment.yaml
-- Encoder_Service.yaml
-- Alarm_Deployment.yaml
-- Alarm_Service.yaml
-- Chat_Deployment.yaml
-- Chat_Service.yaml
-- Gallery_Deployment.yaml
-- Gallery_Service.yaml
-- Batch_Deployment.yaml
-- Batch_Service.yaml
+#- Encoder_Deployment.yaml
+#- Encoder_Service.yaml
+#- Alarm_Deployment.yaml
+#- Alarm_Service.yaml
+#- Chat_Deployment.yaml
+#- Chat_Service.yaml
+#- Gallery_Deployment.yaml
+#- Gallery_Service.yaml
+#- Batch_Deployment.yaml
+#- Batch_Service.yaml
 images:
-- name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/alarm
-  newTag: 2024-08-08T18-50-07
-- name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/batch
-  newTag: 2024-08-08T19-03-31
+#- name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/alarm
+#  newTag: 2024-08-08T18-50-07
+#- name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/batch
+#  newTag: 2024-08-08T19-03-31
 - name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/board
   newTag: 2024-08-08T14-56-57
-- name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/chat
-  newTag: 2024-08-08T18-55-13
-- name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/encoder
-  newTag: 2024-08-08T18-02-03
-- name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/gallery
-  newTag: 2024-08-08T19-00-02
+#- name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/chat
+#  newTag: 2024-08-08T18-55-13
+#- name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/encoder
+#  newTag: 2024-08-08T18-02-03
+#- name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/gallery
+#  newTag: 2024-08-08T19-00-02
 - name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/react
   newTag: "58"
 apiVersion: kustomize.config.k8s.io/v1beta1
