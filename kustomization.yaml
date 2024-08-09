@@ -15,7 +15,7 @@ resources:
 - Batch_Service.yaml
 images:
 - name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/alarm
-  newTag: 2024-08-09T21-13-34
+  newTag: 2024-08-09T21-33-46
 - name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/batch
   newTag: 2024-08-08T19-03-31
 - name: 422443478711.dkr.ecr.ap-northeast-2.amazonaws.com/board
